@@ -1,0 +1,298 @@
+/*==================================================================================================================================================*/
+/*     Version Mobile :   ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+	body{ 		background-image:url(../images/wood.jpg) 	}
+	
+	header{
+        -webkit-border-top-left-radius: 20px;
+        -moz-border-radius-topleft: 20px;
+        border-top-left-radius: 20px;
+        -webkit-border-top-right-radius:  20px;
+        -moz-border-radius-topright: 20px;
+        border-top-right-radius: 20px;
+		width:100%;
+        background-color: #fffafa;
+        opacity: 0.4;
+        margin-bottom: 10px;
+	}
+
+	
+	header div{
+		width:100%;
+	}
+	
+	header div a img{
+		margin:0 auto;
+		width:30%;
+		display:block;
+	}
+
+	nav{
+		width:100%;
+		text-align:center;
+	}
+
+    nav a{
+        background:#444;
+        background: -webkit-linear-gradient( #555, #F4F1E9);
+        background:    -moz-linear-gradient( #555, #F4F1E9);
+        background:     -ms-linear-gradient( #555, #F4F1E9);
+        background:      -o-linear-gradient( #555, #F4F1E9);
+        background:         linear-gradient( #555, #F4F1E9);
+        text-transform: uppercase;
+        font-size: 19px;
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+        0 -1px 0 rgba( 255, 255, 255, 0.4);
+        margin:0 auto;
+        display:block;
+        text-decoration:none;
+        padding:2.4%;
+        color: #F4F1E9;
+        border-bottom: 1px solid gray;
+        top: 60px;
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    nav a:first-of-type{ border-top:1px solid gray; 	}
+	
+	nav a:link, nav a:visited {
+		color:#000;
+		background:blanc;
+	}
+	
+	#image_accueil img{ width:100%;	}
+
+    section{ padding-bottom: 150px;}
+    section h1:nth-of-type(1){
+        font-size: 130%;
+        text-align: center;
+        color: #93928f;
+        font-family: 'Kaushan Script',cursive;
+    }
+    section hr:nth-child(2),
+    section hr:nth-child(4){ /*  hr.ornamental {*/
+        background:url(../images/ornamental.png) center no-repeat;
+        background-size:960px 21px;
+        height:21px;
+        width:100%;
+        border:none;
+        margin:0;
+        padding:0
+    }
+    section hr:nth-child(2){ margin:15px 0 -5px 0; }
+
+    /* ----------------------  Agent-imobilier companier Div --------------------------------- */
+    section div:nth-of-type(2){
+
+        background-color: #fffafa;
+        width: 100%;
+        height: 100px;
+    }
+    section ul{
+        margin: 0 0 0 -40px;
+        list-style-type: none;
+        width: 100%;
+    }
+    section ul li a{
+        float: left;
+        width: 29%;
+        height: 100px;
+    }
+    section ul li h3{
+        padding-top: 5px;
+        color: #aa7112;
+        font-size: 110%;
+    }
+    section ul li p{
+        display: inline;
+        color: red;
+        font-size: 110%;
+        font-family: 'Kaushan Script',cursive;
+    }
+
+
+    /* =============================================================================
+       Footer Nav Icons   et Partier:
+       ========================================================================== */
+    footer{
+        width:100%;
+        position: fixed;
+        bottom: 0;
+
+    }
+
+    footer ul{
+        margin-left:-40px;
+        width: 100%;
+    }
+    /* ---------------------- reseauax   SOCIAL --------------------------------- */
+
+    footer ol{ list-style-type: none; }
+    footer div:first-child{
+        margin: 0 auto 0 auto;
+        width: 100%;
+        height: 60px;
+    }
+
+    footer div ol li{
+        padding: 12px;
+        float: left;
+        width: 20%;
+        height: 60px;
+    }
+    footer div ol li a img{
+        display: block;
+        margin: 5% auto 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    /*---------------------------------  nav FOOTER------------------------------------------------------*/
+
+    footer ul li{
+        opacity: 0.9;
+        padding: 5px;
+        border: 1px dotted #b7c5d3;
+        width: 20%;
+        height: 60px;
+        background: url("../images/background.jpg");
+        float: left;
+        list-style-type: none;
+        color: #EDE574;
+        font-weight: bold;
+   /*/     text-shadow: 0 -1px 1px #000000;*/
+        text-align: center;
+        background:#7e7c77;
+        background: -webkit-linear-gradient( #4a4843, #8e8c87);
+        background:    -moz-linear-gradient( #4a4843, #8e8c87);
+        background:     -ms-linear-gradient( #4a4843, #8e8c87);
+        background:      -o-linear-gradient( #4a4843, #c6c4bf);
+        background:         linear-gradient( #4a4843, #8e8c87);
+        text-transform: full-size-kana;
+    }
+    footer ul li:first-child{
+        -webkit-border-top-left-radius: 15px;
+        -moz-border-radius-topleft: 15px;
+        border-top-left-radius: 15px;
+    }
+    footer ul li:last-child{
+        -webkit-border-top-right-radius:  15px;
+        -moz-border-radius-topright: 15px;
+        border-top-right-radius: 15px;
+    }
+    footer div  ul li a{
+        width: 100%;
+        text-decoration: none;
+        color: #f7b714;
+    }
+
+    footer div ul li a img{
+        display: block;
+        margin: 5% auto 0 auto;
+        width: 27%;
+        height: 55%;
+    }
+    footer div ul li a span{
+        margin-top: -15px;
+        font-size: 100%;
+        text-decoration-color: #fffafa;
+    }
+
+
+    /* ============  Finish  Footer================================================================= */
+
+    /*   ---------------------------   Pages Contact ----------------------------------------------------------------*/
+    section form{
+        width: 100%;
+
+    }
+    div label{
+        font-size: 17px;
+        width: 30%;
+        float: left;
+        color: #670212;
+        font-family: "Artifika";
+    }
+
+    div input:not(:last-child),
+    div textarea{
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        font-size: 19px;
+        padding: 3px;
+        margin:  2px 0;
+        color: #393939 ;
+        font-style: italic;
+        width: 65%;
+        opacity: 0.2;
+    }
+    div input:not(:empty){ opacity: 0.9;}
+    div input:focus,
+    div textarea:focus{
+        opacity: 1;
+        color: #530211;
+    }
+
+    section input[type="reset"],
+    section input[type="submit"]{
+        width: 45%;
+        float: right;
+        background-color: #625e52;
+        font-size: 18px;
+        padding: 7px;
+        color: #fffafa;
+        font-style: oblique;
+    }
+    section input[type="reset"]{
+        -webkit-border-top-left-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-topleft: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 20px;
+    }
+    section input[type="submit"]{
+        margin-top: -85px;
+        -webkit-border-top-left-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-topleft: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+
+
+
+
+/*==================================================================================================================================================*/
+/*   Version tablet:      ---------------------------------  */
+@media (min-width: 641px) and (max-width: 980px){
+	header{
+		width:100%;
+		background:white;
+	}
+	
+	header div a img{
+		width:30%;
+	}
+	
+	nav ul li{
+		list-style-type:none;
+	}
+
+
+}
+
+/*==================================================================================================================================================*/
+/*   Version Desctop:      ---------------------------------  */
+@media (min-width: 980px){
+    body{
+        background-color: #a9a9a9;
+    }
+
+
+}
