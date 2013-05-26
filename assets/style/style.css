@@ -27,6 +27,7 @@
 		display:block;
 	}
 
+    #menu-tablet{ display: none;}
 	nav{
 		width:100%;
 		text-align:center;
@@ -71,7 +72,7 @@
         font-family: 'Kaushan Script',cursive;
     }
     section hr:nth-child(2),
-    section hr:nth-child(4){ /*  hr.ornamental {*/
+    section hr:nth-child(5){ /*  hr.ornamental {*/
         background:url(../images/ornamental.png) center no-repeat;
         background-size:960px 21px;
         height:21px;
@@ -81,6 +82,46 @@
         padding:0
     }
     section hr:nth-child(2){ margin:15px 0 -5px 0; }
+    /*     section Text   Efect */
+    .letter-container {
+        position: absolute;
+        margin: -100px 0 0 0;
+        padding: 2px;
+        height: 100px;
+    }
+    .letter-container h2 {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .letter-container h2 a {
+        text-align: center;
+        font-size: 32px;
+        line-height: 50px;
+        display: block;
+        padding-bottom: 30px;
+        -webkit-mask: url(../images/mask.png) repeat;
+        -o-mask: url(../images/mask.png) repeat;
+        -moz-mask: url(../images/mask.png) repeat;
+        -ms-mask: url(../images/mask.png) repeat;
+        mask: url(../images/mask.png) repeat;
+    }
+    .letter-container h2 a span {
+        color: window;
+        opacity: 1;
+        text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -webkit-animation: sharpen 0.9s linear backwards;
+        -moz-animation: sharpen 0.9s linear backwards;
+        -ms-animation: sharpen 0.9s linear backwards;
+        animation: sharpen 0.9s linear backwards;
+    }
+    /*     section Text-Efect  FINICH----------------------------------------------------------------------------*/
+
+
 
     /* ----------------------  Agent-imobilier companier Div --------------------------------- */
     section div:nth-of-type(2){
@@ -88,6 +129,12 @@
         background-color: #fffafa;
         width: 100%;
         height: 100px;
+        -webkit-border-top-right-radius: 50px;
+        -webkit-border-bottom-right-radius: 50px;
+        -moz-border-radius-topright: 50px;
+        -moz-border-radius-bottomright: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
     section ul{
         margin: 0 0 0 -40px;
@@ -269,20 +316,330 @@
 
 
 /*==================================================================================================================================================*/
-/*   Version tablet:      ---------------------------------  */
+/*==                    Version Tablet                                                          ====================================================*/
+/*                                                    Version tablet:                                            ---------------------------------  */
+/*==================================================================================================================================================*/
+
 @media (min-width: 641px) and (max-width: 980px){
+    body{ 		background-image:url(../images/background-bois3.jpg) 	}
 	header{
-		width:100%;
+		width:20%;
 		background:white;
+        background-color: #fffafa;
+        -webkit-border-bottom-right-radius: 60px;
+        -moz-border-radius-bottomright: 60px;
+        border-bottom-right-radius: 60px;
+        opacity: 0.6;
+        margin-bottom: 10px;
+        float: left;
+        margin: -10px 0 0 -10px ;
+
 	}
-	
 	header div a img{
-		width:30%;
+		width:100%;
 	}
-	
-	nav ul li{
-		list-style-type:none;
-	}
+
+  /*   Menu:-------------*/
+    nav{ display: none;}
+    #menu-tablet{ display: inline;}
+    ul.sdt_menu{
+        margin:0;
+        padding:0;
+        list-style: none;
+        font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+        font-size:10px;
+        width:100%;
+        margin-top:0px;
+    }
+    ul.sdt_menu a{
+        text-decoration:none;
+        outline:none;
+    }
+    ul.sdt_menu li{
+        float:left;
+        width:20%;
+        height:85px;
+        position:relative;
+        cursor:pointer;
+    }
+    ul.sdt_menu li > a{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:20%;
+        height:85px;
+        z-index:12;
+        background:transparent url(../images/overlay.png) no-repeat bottom right;
+        -moz-box-shadow:0px 0px 2px #000 inset;
+        -webkit-box-shadow:0px 0px 2px #000 inset;
+        box-shadow:0px 0px 2px #000 inset;
+    }
+    ul.sdt_menu li a img{
+        border:none;
+        position:absolute;
+        width:0px;
+        height:0px;
+        bottom:0px;
+        left:55px;
+        z-index:100;
+        -moz-box-shadow:0px 0px 4px #000;
+        -webkit-box-shadow:0px 0px 4px #000;
+        box-shadow:0px 0px 4px #000;
+        -webkit-border-top-left-radius: 65px;
+        -moz-border-radius-topleft: 65px;
+        border-top-left-radius: 65px;
+    }
+    ul.sdt_menu li span.sdt_wrap{
+        position:absolute;
+        top:25px;
+        left:0px;
+        width:20%;
+        height:60px;
+        z-index:15;
+    }
+    ul.sdt_menu li span.sdt_active{
+        position:absolute;
+        background:#111;
+        top:85px;
+        width:120px;
+        height:0px;
+        left:0px;
+        z-index:14;
+        -moz-box-shadow:0px 0px 4px #000 inset;
+        -webkit-box-shadow:0px 0px 4px #000 inset;
+        box-shadow:0px 0px 4px #000 inset;
+    }
+    ul.sdt_menu li span span.sdt_link,
+    ul.sdt_menu li span span.sdt_descr,
+    ul.sdt_menu li div.sdt_box a{
+        margin-left:15px;
+        text-transform:uppercase;
+        text-shadow:1px 1px 1px #000;
+    }
+    ul.sdt_menu li span span.sdt_link{
+        color:#fff;
+        font-size:18px;
+        float:left;
+        clear:both;
+    }
+    ul.sdt_menu li span span.sdt_descr{
+        color:#0B75AF;
+        float:left;
+        clear:both;
+        width:90px; /*For dumbass IE7*/
+        font-size:10px;
+        letter-spacing:1px;
+    }
+    ul.sdt_menu li div.sdt_box{
+        display:block;
+        position:absolute;
+        width:85px;
+        overflow:hidden;
+        height:150px;
+        top:85px;
+        left:-40px;
+        display:none;
+        background:#000;
+    }
+    ul.sdt_menu li div.sdt_box a{
+        float:left;
+        clear:both;
+        line-height:30px;
+        color:#0B75AF;
+    }
+    ul.sdt_menu li div.sdt_box a:first-child{
+        margin-top:15px;
+    }
+    ul.sdt_menu li div.sdt_box a:hover{
+        color:#fff;
+    }
+
+    /* ------------------- menu finich ------------------------------*/
+
+    section>div>img{ display: none;}
+
+
+
+
+    section h1:nth-of-type(1){
+        font-size: 130%;
+        text-align: center;
+        color: #93928f;
+        font-family: 'Kaushan Script',cursive;
+    }
+    section hr:nth-child(2),
+    section hr:nth-child(5){ /*  hr.ornamental {*/
+        background:url(../images/ornamental.png) center no-repeat;
+        background-size:960px 21px;
+        height:21px;
+        width:100%;
+        border:none;
+        margin:0;
+        padding:0
+    }
+    section hr:nth-child(2){ margin:10px 0 25px 0; }
+     /*  +++++++++++++++++++++   section Text   Efect        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    .letter-container {
+        margin: 75px 0 0 50px;
+        padding: 2px;
+        height: 100px;
+    }
+    .letter-container h2 {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .letter-container h2 a {
+        text-align: center;
+        font-size: 32px;
+        line-height: 50px;
+        display: block;
+        padding-bottom: 30px;
+        -webkit-mask: url(../images/mask.png) repeat;
+        -o-mask: url(../images/mask.png) repeat;
+        -moz-mask: url(../images/mask.png) repeat;
+        -ms-mask: url(../images/mask.png) repeat;
+        mask: url(../images/mask.png) repeat;
+    }
+    .letter-container h2 a span {
+        color: white;
+        opacity: 1;
+        text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -webkit-animation: sharpen 0.9s linear backwards;
+        -moz-animation: sharpen 0.9s linear backwards;
+        -ms-animation: sharpen 0.9s linear backwards;
+        animation: sharpen 0.9s linear backwards;
+    }
+
+    /*     section Text   Efect  FINICH----------------------------------------------------------------------------*/
+
+    /* ----------------------  Agent-imobilier companier Div --------------------------------- */
+    section div:nth-of-type(2){
+        background-color: #fffafa;
+        width: 55%;
+        height: 100px;
+        margin-left: -9px;
+        -webkit-border-top-right-radius: 50px;
+        -webkit-border-bottom-right-radius: 50px;
+        -moz-border-radius-topright: 50px;
+        -moz-border-radius-bottomright: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    section ul{
+        margin: 0 0 0 -40px;
+        list-style-type: none;
+        width: 100%;
+    }
+    section ul li a{
+        float: left;
+        width: 29%;
+        height: 100px;
+    }
+    section ul li h3{
+        padding-top: 5px;
+        color: #aa7112;
+        font-size: 110%;
+    }
+    section ul li p{
+        display: inline;
+        color: red;
+        font-size: 110%;
+        font-family: 'Kaushan Script',cursive;
+    }
+
+
+    /* =============================================================================
+       Footer Nav Icons   et Partier:
+       ========================================================================== */
+    footer{
+        width:100%;
+        position: fixed;
+        bottom: 0;
+
+    }
+
+    footer ul{
+        margin-left:-40px;
+        width: 100%;
+    }
+    /* ---------------------- reseauax   SOCIAL --------------------------------- */
+
+    footer ol{ list-style-type: none; }
+    footer div:first-child{
+        margin: 0 auto 0 auto;
+        width: 100%;
+        height: 60px;
+    }
+
+    footer div ol li{
+        padding: 12px;
+        float: left;
+        width: 20%;
+        height: 60px;
+    }
+    footer div ol li a img{
+        display: block;
+        margin: 5% auto 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    /*---------------------------------  nav FOOTER------------------------------------------------------*/
+
+    footer ul li{
+        opacity: 0.9;
+        padding: 5px;
+        border: 1px dotted #b7c5d3;
+        width: 20%;
+        height: 60px;
+        background: url("../images/background.jpg");
+        float: left;
+        list-style-type: none;
+        color: #EDE574;
+        font-weight: bold;
+        /*/     text-shadow: 0 -1px 1px #000000;*/
+        text-align: center;
+        background:#7e7c77;
+        background: -webkit-linear-gradient( #4a4843, #8e8c87);
+        background:    -moz-linear-gradient( #4a4843, #8e8c87);
+        background:     -ms-linear-gradient( #4a4843, #8e8c87);
+        background:      -o-linear-gradient( #4a4843, #c6c4bf);
+        background:         linear-gradient( #4a4843, #8e8c87);
+        text-transform: full-size-kana;
+    }
+    footer ul li:first-child{
+        -webkit-border-top-left-radius: 15px;
+        -moz-border-radius-topleft: 15px;
+        border-top-left-radius: 15px;
+    }
+    footer ul li:last-child{
+        -webkit-border-top-right-radius:  15px;
+        -moz-border-radius-topright: 15px;
+        border-top-right-radius: 15px;
+    }
+    footer div  ul li a{
+        width: 100%;
+        text-decoration: none;
+        color: #f7b714;
+    }
+
+    footer div ul li a img{
+        display: block;
+        margin: 5% auto 0 auto;
+        width: 27%;
+        height: 55%;
+    }
+    footer div ul li a span{
+        margin-top: -15px;
+        font-size: 100%;
+        text-decoration-color: #fffafa;
+    }
+
 
 
 }
