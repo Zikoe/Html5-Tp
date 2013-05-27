@@ -1,0 +1,99 @@
+@media (max-width: 640px) {
+	/* Header de la page */
+		/* Voir Style.css*/
+	/* Fin du header */
+	body{
+		color:white;
+	}
+	
+	nav{
+		width:100%;
+		text-align:center;
+	}
+
+	nav a{
+		background:#444;
+		background: -webkit-linear-gradient( #555, #2C2C2C);
+		background:    -moz-linear-gradient( #555, #2C2C2C);
+		background:     -ms-linear-gradient( #555, #2C2C2C);
+		background:      -o-linear-gradient( #555, #2C2C2C);
+		background:         linear-gradient( #555, #2C2C2C);
+		text-transform: uppercase;
+		font-size: 15px;
+		text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+		box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+					0 -1px 0 rgba( 255, 255, 255, 0.4);
+		margin:0 auto;
+		display:block;
+		text-decoration:none;
+		padding:1%;
+		color: #cccccc;
+		border-bottom: 1px solid gray;
+		top: 60px;
+		border-radius: 3px 3px 3px 3px;
+	}
+	
+	nav a:first-of-type{
+		border-top:1px solid gray;
+	}
+
+	/* Fin de header & Nav */
+	
+	/* Contenu de la page */
+	#images_des_maisons{
+		width:100%;
+	}
+	
+	#images_des_maisons img{
+		width:21%;	
+		padding-left:2.6%;
+	}
+	/* Fin du contenu de la page */
+	
+	/* Footer */
+		/* Voir Style.css*/
+	/* Fin du Footer*/
+}
+
+@media (min-width: 641px) and (max-width: 980px){
+/* Slider */
+	#banner-slide{
+		width:100% !important;
+		margin:0 auto;
+	}
+/* Fin du Slider */
+
+/* Contenu de la page */
+	#images_des_maisons{
+		width:100%;
+	}
+	
+	#images_des_maisons img{
+		width:20%;	
+		padding-left:3.8%;
+	}
+/* Fin du contenu de la page */
+}
+
+@media (min-width: 981px){
+/* Slider */
+	#banner-slide{
+		width:100% !important;
+		margin:0 auto;
+	}
+	header div a img:first-of-type{
+		display:none;
+	}
+/* Fin du slider Slider */
+
+/* Contenu de la page */
+	#images_des_maisons{
+		width:100%;
+	}
+	
+	#images_des_maisons img{
+		width:25%;	
+		padding-left:6%;
+	}
+/* Fin du contenu de la page */
+}
