@@ -71,6 +71,7 @@
         color: #93928f;
         font-family: 'Kaushan Script',cursive;
     }
+    .ornamental-contact,
     section hr:nth-child(2),
     section hr:nth-child(4){ /*  hr.ornamental {*/
         background:url(../images/ornamental.png) center no-repeat;
@@ -80,6 +81,9 @@
         border:none;
         margin:50px 0 0 0;
         padding:0
+    }
+    #ornamental-contact{
+        margin:45px 0 -5px 0;
     }
     section hr:nth-child(2){ margin:15px 0 -5px 0; }
     /*     section Text   Efect */
@@ -126,6 +130,10 @@
 
 
     /* ----------------------  Agent-imobilier companier Div --------------------------------- */
+    #director-img{
+        width: 100px;
+        height: 100px;
+    }
     section div:nth-of-type(2){
         margin-top: 30px;
         background-color: #fffafa;
@@ -257,6 +265,7 @@
         display: inline;
 
     }
+    iframe{margin-top: 50px; }
     /* ---------------------- reseauax   SOCIAL --------------------------------- */
     footer{
         width: 100%;
@@ -381,7 +390,7 @@
         color: #fffafa;
         font-style: oblique;
     }
-    section input[type="reset"]{
+    section input[type="submit"]{
         -webkit-border-top-left-radius: 25px;
         -webkit-border-bottom-right-radius: 25px;
         -moz-border-radius-topleft: 25px;
@@ -390,8 +399,8 @@
         border-bottom-right-radius: 25px;
         margin-top: 20px;
     }
-    section input[type="submit"]{
-        margin-top: -85px;
+    section input[type="reset"]{
+        margin-top: 65px ;
         -webkit-border-top-left-radius: 25px;
         -webkit-border-bottom-right-radius: 25px;
         -moz-border-radius-topleft: 25px;
@@ -614,6 +623,10 @@
     /*   finish - Slider                           ---------------------------------------------------------------------------*/
 
     /* ----------------------  Agent-imobilier companier Div --------------------------------- */
+    #director-img{
+       width: 100px;
+       height: 100px;
+   }
     section div:nth-of-type(2){
         background-color: #fffafa;
         width: 55%;
@@ -818,8 +831,27 @@
         text-decoration-color: #fffafa;
     }
 
+    /* Pages Contact                    ----------------------------------------------------------------------------*/
+    #container-contact{
+        margin: 0 auto 0 auto;
+        width: 500px;
+        height: 300px;
+        background-color: #ffff00;
+    }
+    #container-contact  form label{
+        width: 60px;
+        text-align: left;
+        padding: 20px;
+    }
+    #container-contact form input{
+        width: 250px;
+        float: right;
 
+    }
 
+    #container-contact iframe {
+        margin: 30px 0 60px 0;
+    }
 }
 
 
@@ -859,6 +891,8 @@
         display: inline;
         float: right;
         width: 675px;
+
+
     }
     ul.sdt_menu{
         margin:-163px 0 0 0;
@@ -1030,6 +1064,11 @@
 
 
     /* ----------------------  Agent-imobilier companier Div --------------------------------- */
+
+   #director-img{
+       width: 100px;
+       height: 100px;
+   }
     section div:nth-of-type(2){
         background-color: #fffafa;
         width: 350px;
@@ -1143,7 +1182,7 @@
         display: inline;
 
     }
-
+    iframe{margin-top: 50px; }
 
 
     /* =============================================================================
@@ -1246,6 +1285,28 @@
         text-decoration-color: #fffafa;
     }
 
+/*-------------             Pages Contact    ----------------------------------------------------------------------------*/
+
+    #container-contact{
+        width: 500px;
+        margin: 165px auto 0 auto ;
+        padding-top: 50px;
+    }
+    #ornamental-contact {
+
+        margin-top: 60px;
+    }
+    #container-contact form label{
+        width: 100px;
+        text-align: left;
+    }
+    #container-contact form input{
+        width: 250px;
+    }
+    #container-contact form input{
+
+    }
+
 
 
 
@@ -1253,6 +1314,8 @@
 /*   Variable Global --------------------------------------------------------------------------------------------------------*/
 
 .clearFix{  clear:both;}
+#reset:active{
 
+}
 
 
